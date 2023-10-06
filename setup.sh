@@ -26,49 +26,49 @@ exit 1
 fi
 }
 
-run_funny() {
+run_alif() {
 #Create Folder
 mkdir /etc/slowdns
 mkdir /etc/xray
 mkdir /etc/websocket
 mkdir /etc/xray
-mkdir /etc/funny
-mkdir /etc/funny/trojan
-mkdir /etc/funny/vless
-mkdir /etc/funny/vmess
-mkdir /etc/funny/limit
-mkdir /etc/funny/socks5
-mkdir /etc/funny/limit/trojan
-mkdir /etc/funny/limit/vless
-mkdir /etc/funny/limit/vmess
-mkdir /etc/funny/limit/ssh
-mkdir /etc/funny/limit/sosck5
-mkdir /etc/funny/limit/socks5/ip
-mkdir /etc/funny/limit/socks5/quota
-mkdir /etc/funny/limit/ssh/ip
-mkdir /etc/funny/limit/trojan/ip
-mkdir /etc/funny/limit/trojan/quota
-mkdir /etc/funny/limit/vless/ip
-mkdir /etc/funny/limit/vless/quota
-mkdir /etc/funny/limit/vmess/ip
-mkdir /etc/funny/limit/vmess/quota
-mkdir /etc/funny/log
-mkdir /etc/funny/log/trojan
-mkdir /etc/funny/log/vless
-mkdir /etc/funny/log/vmess
-mkdir /etc/funny/log/ssh
-mkdir /etc/funny/log/socks5
-mkdir /etc/funny/cache
-mkdir /etc/funny/cache/trojan-tcp
-mkdir /etc/funny/cache/trojan-ws
-mkdir /etc/funny/cache/trojan-grpc
-mkdir /etc/funny/cache/vless-ws
-mkdir /etc/funny/cache/vless-grpc
-mkdir /etc/funny/cache/vmess-ws
-mkdir /etc/funny/cache/vmess-grpc
-mkdir /etc/funny/cache/vmess-ws-orbit
-mkdir /etc/funny/cache/vmess-ws-orbit1
-mkdir /etc/funny/cache/socks5
+mkdir /etc/alif
+mkdir /etc/alif/trojan
+mkdir /etc/alif/vless
+mkdir /etc/alif/vmess
+mkdir /etc/alif/limit
+mkdir /etc/alif/socks5
+mkdir /etc/alif/limit/trojan
+mkdir /etc/alif/limit/vless
+mkdir /etc/alif/limit/vmess
+mkdir /etc/alif/limit/ssh
+mkdir /etc/alif/limit/sosck5
+mkdir /etc/alif/limit/socks5/ip
+mkdir /etc/alif/limit/socks5/quota
+mkdir /etc/alif/limit/ssh/ip
+mkdir /etc/alif/limit/trojan/ip
+mkdir /etc/alif/limit/trojan/quota
+mkdir /etc/alif/limit/vless/ip
+mkdir /etc/alif/limit/vless/quota
+mkdir /etc/alif/limit/vmess/ip
+mkdir /etc/alif/limit/vmess/quota
+mkdir /etc/alif/log
+mkdir /etc/alif/log/trojan
+mkdir /etc/alif/log/vless
+mkdir /etc/alif/log/vmess
+mkdir /etc/alif/log/ssh
+mkdir /etc/alif/log/socks5
+mkdir /etc/alif/cache
+mkdir /etc/alif/cache/trojan-tcp
+mkdir /etc/alif/cache/trojan-ws
+mkdir /etc/alif/cache/trojan-grpc
+mkdir /etc/alif/cache/vless-ws
+mkdir /etc/alif/cache/vless-grpc
+mkdir /etc/alif/cache/vmess-ws
+mkdir /etc/alif/cache/vmess-grpc
+mkdir /etc/alif/cache/vmess-ws-orbit
+mkdir /etc/alif/cache/vmess-ws-orbit1
+mkdir /etc/alif/cache/socks5
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Input Domain              	$NC"
@@ -178,7 +178,7 @@ organizationalunit=AYRPratama
 commonname=AYRPratama
 email=MEGAWATIKOMUNISBIADAB@ANJING.COM
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://github.com/ayrpratama/alif/raw/main/password"
+wget -O /etc/pam.d/common-password "https://github.com/megawatipepek/ok/raw/main/password"
 chmod +x /etc/pam.d/common-password
 # go to root
 cd
@@ -244,8 +244,8 @@ echo "neofetch" >> .profile
 apt -y install nginx php php-fpm php-cli php-mysql libxml-parser-perl
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/ayrpratama/alif/main/nginx.conf
-wget -O /etc/nginx/conf.d/funnvpn.conf https://raw.githubusercontent.com/ayrpratama/alif/main/funnvpn.conf
+wget -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/megawatipepek/ok/main/nginx.conf
+wget -O /etc/nginx/conf.d/funnvpn.conf https://raw.githubusercontent.com/megawatipepek/ok/main/funnvpn.conf
 sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/funnvpn.conf
 wget -O /var/www/html/index.html https://github.com/Rerechan02/Rerechan02.github.io/raw/main/index.html
 sed -i 's/listen = \/var\/run\/php-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php/fpm/pool.d/www.conf
@@ -261,19 +261,19 @@ wget -O /home/vps/public_html/index.html "https://github.com/Rerechan02/Rerechan
 cd /usr/bin
 rm -fr menu
 rm -fr /usr/sbin/menu
-wget https://raw.githubusercontent.com/ayrpratama/alif/main/menu.zip
+wget https://raw.githubusercontent.com/megawatipepek/ok/main/menu.zip
 unzip menu.zip
 rm -fr menu.zip
 chmod +x *
 clear
 cd /usr/local/bin
-wget https://raw.githubusercontent.com/ayrpratama/alif/main/ws.zip
+wget https://raw.githubusercontent.com/megawatipepek/ok/main/ws.zip
 unzip ws.zip
 rm -fr ws.zip
 chmod +x *
 chmod +x /usr/bin/*
 cd /etc/systemd/system
-wget https://raw.githubusercontent.com/ayrpratama/alif/main/service.zip
+wget https://raw.githubusercontent.com/megawatipepek/ok/main/service.zip
 unzip service.zip
 rm -fr service.zip
 systemctl daemon-reload
@@ -509,7 +509,7 @@ reboot
 run_pensi() {
 run_eula
 run_tools
-run_funny
+run_alif
 run_ayato
 run_cantikva
 run_indo
